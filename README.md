@@ -3,7 +3,7 @@
 
 Code for Papar ["BlueSuffix: Reinforced Blue Teaming for Vision-Language Models Against Jailbreak Attacks"](https://arxiv.org/abs/2410.20971). 
 
-We currently provide code for the three components of BlueSuffix. For fine-tuned Suffix Generator, we will provide it in the future.
+We currently provide the code for the three components of BlueSuffix. For the fine-tuned Suffix Generator, we will provide in the future.
 
 *Abstract*
 
