@@ -53,7 +53,7 @@ python ppo_blue_team.py
 ```
 
 ## Citing BlueSuffix
-🌟 If you find it helpful, please consider starring this repository and cite our research:
+🌟 If you find it helpful, please star this repository and cite our research:
 ```tex
 @article{zhao2024bluesuffix,
   title={BlueSuffix: Reinforced Blue Teaming for Vision-Language Models Against Jailbreak Attacks},
