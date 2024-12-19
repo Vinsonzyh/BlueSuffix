@@ -34,7 +34,7 @@ Please following the offcial guidelines.
 ```
 cd Image_Purifier
 
-python image_purifier.py --config diffpure.yml --log_dir path/to/your/fold
+python image_purifier.py --config configs/diffpure.yml --log_dir path/to/your/fold
 ```
 The code of Image Purifier is based on [DiffPure](https://github.com/NVlabs/DiffPure).
 
