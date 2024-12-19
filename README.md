@@ -4,12 +4,13 @@
 Code for Papar ["BlueSuffix: Reinforced Blue Teaming for Vision-Language Models Against Jailbreak Attacks"](https://arxiv.org/abs/2410.20971). 
 
 We currently provide the code for the three components of BlueSuffix. For the fine-tuned Suffix Generator, we will provide in the future.
-
-*Abstract*
+ 
+## 📌 Abstract
 
 Despite their superb multimodal capabilities, Vision-Language Models (VLMs) have been shown to be vulnerable to jailbreak attacks, which are inference-time attacks that induce the model to output harmful responses with tricky prompts. It is thus essential to defend VLMs against potential jailbreaks for their trustworthy deployment in real-world applications. In this work, we focus on black-box defense for VLMs against jailbreak attacks. Existing black-box defense methods are either unimodal or bimodal. Unimodal methods enhance either the vision or language module of the VLM, while bimodal methods robustify the model through text-image representation realignment. However, these methods suffer from two limitations: 1) they fail to fully exploit the cross-modal information, or 2) they degrade the model performance on benign inputs. To address these limitations, we propose a novel blue-team method **BlueSuffix** that defends the black-box target VLM against jailbreak attacks without compromising its performance. **BlueSuffix** includes three key components: 1) a visual purifier against jailbreak images, 2) a textual purifier against jailbreak texts, and 3) a blue-team suffix generator fine-tuned via reinforcement learning for enhancing cross-modal robustness. We empirically show on three VLMs (LLaVA, MiniGPT-4, and Gemini) and two safety benchmarks (MM-SafetyBench and RedTeam-2K) that **BlueSuffix** outperforms the baseline defenses by a significant margin. Our **BlueSuffix** opens up a promising direction for defending VLMs against jailbreak attacks.
 
 ![BlueSuffix](./framework.jpg)
+
 
 # Usage
 
@@ -52,7 +53,7 @@ Before fine-tuning, deploying target VLM is needed.
 python ppo_blue_team.py
 ```
 
-## Citing BlueSuffix
+# Citing BlueSuffix
 🌟 If you find it helpful, please star this repository and cite our research:
 ```tex
 @article{zhao2024bluesuffix,
