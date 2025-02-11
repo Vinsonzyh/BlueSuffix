@@ -56,11 +56,11 @@ python ppo_blue_team.py
 # Citing BlueSuffix
 🌟 If you find it helpful, please star this repository and cite our research:
 ```tex
-@article{zhao2024bluesuffix,
-  title={BlueSuffix: Reinforced Blue Teaming for Vision-Language Models Against Jailbreak Attacks},
-  author={Zhao, Yunhan and Zheng, Xiang and Luo, Lin and Li, Yige and Ma, Xingjun and Jiang, Yu-Gang},
-  journal={arXiv preprint arXiv:2410.20971},
-  year={2024}
+@inproceedings{zhao2025bluesuffix,
+title={BlueSuffix: Reinforced Blue Teaming for Vision-Language Models Against Jailbreak Attacks},
+author={Yunhan Zhao and Xiang Zheng and Lin Luo and Yige Li and Xingjun Ma and Yu-Gang Jiang},
+booktitle={ICLR},
+year={2025}
 }
 ```
 In case of any questions, bugs, or suggestions, please feel free to open an issue.
