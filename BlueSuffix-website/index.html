@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="google-site-verification" content="LVy4NMJVYQ8yfuwcjDQx-o5hu17RhGTnl23Tb_lSZKc" />
+  <meta charset="utf-8">
+  <meta name="description" content="BlueSuffix: Reinforced Blue Teaming for Vision-Language Models Against Jailbreak Attacks">
+  <meta name="keywords" content="Jailbreak Defense, Vision-Language Model, Reinforcement Fine-tuning">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BlueSuffix: Reinforced Blue Teaming for Vision-Language Models Against Jailbreak Attacks</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/generator.jpg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/index.js"></script>
+</head>
+
+<body>
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">BlueSuffix: Reinforced Blue Teaming for Vision-Language Models Against Jailbreak Attacks</h1>
+            </h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://scholar.google.com.sg/citations?user=8Brbo6YAAAAJ&hl=en">
+              Yunhan Zhao</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://x-zheng16.github.io/">
+              Xiang Zheng</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="https://github.com/luolin0715/">
+              Lin Luo</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://github.com/bboylyg">
+              Yige Li</a><sup>3</sup>,</span>
+              <span class="author-block">
+                  <a href="http://xingjunma.com">
+              Xingjun Ma</a><sup>1</sup>,</span>
+              <span class="author-block">
+                  <a href="https://fvl.fudan.edu.cn/">
+              Yu-Gang Jiang</a><sup>1</sup>
+              </span><br />
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>Fudan University</span>
+              <span class="author-block"><sup>2</sup>City University of Hong Kong</span>
+              <span class="author-block"><sup>3</sup>Singapore Management University</span>
+            </div>
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href="https://openreview.net/pdf?id=wwVGZRnAYG" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="ai ai-arxiv"></i></span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://github.com/Vinsonzyh/BlueSuffix" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fab fa-github"></i></span>
+                    <span>Code</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Overview</h2>
+          <div class="content has-text-left">
+
+            <p>In this work, we propose a novel defense framework named <b>BlueSuffix</b> that leverages both unimodal and bimodal techniques to safeguard VLMs under a black-box defense setting. Our main contributions are:<p>
+
+           <ol>
+          <li> We propose a novel blue-team framework, <b>BlueSuffix</b>, providing a plug-and-play, model-agnostic, and generic solution for blue-teaming VLMs under black-box setting, enabling seamless integration and extension of existing techniques.</li>
+          <li> In <b>BlueSuffix</b>, we propose a <b>cross-modal optimization</b> method that fine-tunes the blue-team suffix generator through reinforcement learning, incorporating an LLM-based text purifier and a diffusion-based image purifier.</li>
+          <li> We empirically demonstrate the effectiveness of <b>BlueSuffix</b>, which achieves a ~70% and ~50% reduction in ASR against a state-of-the-art attack on open-source and commercial VLMs, respectively. </li>
+          </ol>
+            <p>Our <b>BlueSuffix</b> opens up a promising direction for defending VLMs against jailbreak attacks.<p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <section class="section">
+  <div class="container is-max-desktop">
+    <div style="text-align:center">
+      <h2 class="title is-3">An illustration of BlueSuffix</h2>
+    </div><br>
+    <div class="content has-text-left">
+      <div style="display: flex; flex-direction: column; align-items: center; width: 90%; height: auto; margin: auto">
+        <img src="./static/images/intro_fig.png" alt="An illustraion of BlueSuffix" />
+        <div style="text-align: left; width: 90%; margin-top: 10px;">
+          <b>Caption: A pair of image-text jailbreak prompts (left) can compromise the target VLM to output harmful content (top right). However, the purified and suffixed prompts by our BlueSuffix (middle) lose their adversarial property (bottom right).</b>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div style="text-align:center">
+      <h2 class="title is-3">BlueSuffix</h2>
+    </div><br>
+    <div class="content has-text-left">
+      <div style="display: flex; flex-direction: column; align-items: center; width: 90%; height: auto; margin: auto">
+        <img src="./static/images/framework.png" alt="An illustraion of BlueSuffix" />
+        <div style="text-align: left; width: 90%; margin-top: 10px;">
+          <b>Caption: An overview of BlueSuffix and its three key components: 1) a diffusion-based image purifier to defend the visual input against potential (universal) adversarial perturbation(s)</b>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>  
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div style="text-align:center">
+      <h2 class="title is-3">Showcasing the Purified Prompts</h2>
+    </div><br>
+    <div class="content has-text-left">
+      <div style="display: flex; flex-direction: column; align-items: center; width: 90%; height: auto; margin: auto">
+        <img src="./static/images/suffix_examples.png" alt="An illustraion of BlueSuffix" />
+        <div style="text-align: left; width: 90%; margin-top: 10px;">
+          <b>Caption: The figure illustrates six example inputs (three jailbreaks, three benign) purified by our BlueSuffix. As shown in the figure, the input image appears almost the same after purification by our image purifier, the rewritten texts are more detailed with many questions around the key concepts in the original texts, while the blue suffixes provide a certain type of hint or reminder for the target VLM and the suffixes generated by our suffix generator also exhibit high diversity. </b>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div style="text-align:center">
+      <h2 class="title is-3">BlueSuffix</h2>
+    </div><br>
+    <div class="content has-text-left">
+      <div style="display: flex; flex-direction: column; align-items: center; width: 90%; height: auto; margin: auto">
+        <img src="./static/images/exp_results.jpg" alt="An illustraion of BlueSuffix" />
+        <div style="text-align: left; width: 90%; margin-top: 10px;">
+          <b>Caption: The ASR (%) achieved by different defense methods against various attacks (first column). A lower ASR denotes better defense performance.</b>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>  
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>
+  @inproceedings{zhao2025bluesuffix,
+    title={BlueSuffix: Reinforced Blue Teaming for Vision-Language Models Against Jailbreak Attacks},
+    author={Yunhan Zhao and Xiang Zheng and Lin Luo and Yige Li and Xingjun Ma and Yu-Gang Jiang},
+    booktitle={ICLR},
+    year={2025}
+  }</code></pre>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <a class="icon-link" href="https://github.com/Vinsonzyh/BlueSuffix">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+      
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
