@@ -52,6 +52,9 @@ Before fine-tuning, deploying target VLM is needed.
 ```
 python ppo_blue_team.py
 ```
+The fine-tuned Suffix Generator can be found in this [Google Drive link](https://drive.google.com/drive/folders/1WQYXE0hD_b5xfkg-Nqvm-IonMgj0o6d4?usp=drive_link).
+
+For the current fine-tuned suffix generator, we adopted the default parameters to demonstrate the general applicability of our approach. To further improve the performance and stability of the suffix generator, one could systematically explore the reference policy and the hyperparameter β.
 
 # Citing BlueSuffix
 🌟 If you find it helpful, please star this repository and cite our research:
